@@ -102,7 +102,7 @@ public class Cinema {
     public boolean autoBook(int hallNumber, int numSeats) {
         int[] bestSeats = findBestAvailable(hallNumber, numSeats);
         if (bestSeats.length > 0) {
-            return bookSeats(hallNumber, 0, bestSeats); // Assuming booking in the first row found
+            return bookSeats(hallNumber, 0, bestSeats);
         }
         return false;
     }
